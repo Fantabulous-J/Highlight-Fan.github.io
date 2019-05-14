@@ -1,0 +1,21 @@
+#container {
+    margin: 0 auto;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "ËÎÌו";
+}
+#content{
+    width: 78%;
+    float: right;
+    text-align: left;
+    line-height: 28pt;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+.alignCenter{
+    text-align: center;
+    line-height: 28pt;
+}
+.paraIndent{
+    text-align: left;
+    text-indent: 2em;
+    line-height: 28pt;
+}
