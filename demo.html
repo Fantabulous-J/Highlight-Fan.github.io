@@ -11,9 +11,9 @@
             <table class="table table-bordered">
                 <h3 class="lead"> English Speech</h3>
                 <thead>
-                    <tr class="text-center">
-                        <td>Ground-truth</td><td>Single Gaussian</td><td>Parallel Waveform</td>
-                    </tr>
+                    <!--<tr class="text-center">
+                        <td>Ground-truth</td><td>WaveNet(Open Source Version)</td><td>Single Gaussian</td><td>Parallel Waveform</td>
+                    </tr><-->
                 </thead>
                 <tbody>
                     <tr>
@@ -21,6 +21,7 @@
                     </tr>
                     <tr class="text-center">
                         <td><audio controls=""><source src="samples/GroundTruth/LJ001-0001.wav" type="audio/wav"></audio></td>
+                        <td><audio controls=""><source src="samples/logistics/LJ001-0001.wav" type="audio/wav"></audio></td>
                         <td><audio controls=""><source src="samples/Gaussian/ljspeech-syn_t-00001.wav" type="audio/wav"></audio></td>
                         <td><audio controls=""><source src="samples/IAF_Student/ljspeech-syn_student-00001.wav" type="audio/wav"></audio></td>
                     </tr>
@@ -30,6 +31,7 @@
                     </tr>
                     <tr class="text-center">
                         <td><audio controls=""><source src="samples/GroundTruth/LJ001-0012.wav" type="audio/wav"></audio></td>
+                        <td><audio controls=""><source src="samples/logistics/LJ001-0001.wav" type="audio/wav"></audio></td>
                         <td><audio controls=""><source src="samples/Gaussian/ljspeech-syn_t-00012.wav" type="audio/wav"></audio></td>
                         <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
                     </tr>
@@ -39,6 +41,7 @@
                     </tr>
                     <tr class="text-center">
                         <td><audio controls=""><source src="samples/GroundTruth/LJ001-0030.wav" type="audio/wav"></audio></td>
+                        <td><audio controls=""><source src="samples/logistics/LJ001-0001.wav" type="audio/wav"></audio></td>
                         <td><audio controls=""><source src="samples/Gaussian/ljspeech-syn_t-00030.wav" type="audio/wav"></audio></td>
                         <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
                     </tr>
@@ -48,7 +51,8 @@
                     </tr>
                     <tr class="text-center">
                         <td><audio controls=""><source src="samples/GroundTruth/LJ002-0077.wav" type="audio/wav"></audio></td>
-                        <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
+                        <td><audio controls=""><source src="samples/logistics/LJ001-0001.wav" type="audio/wav"></audio></td>
+                        <td><audio controls=""><source src="samples/Gaussian/ljspeech-syn_t-00263.wav" type="audio/wav"></audio></td>
                         <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
                     </tr>
                     
@@ -57,7 +61,8 @@
                     </tr>
                     <tr class="text-center">
                         <td><audio controls=""><source src="samples/GroundTruth/LJ037-0072.wav" type="audio/wav"></audio></td>
-                        <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
+                        <td><audio controls=""><source src="samples/logistics/LJ001-0001.wav" type="audio/wav"></audio></td>
+                        <td><audio controls=""><source src="samples/Gaussian/ljspeech-syn_t-09685.wav" type="audio/wav"></audio></td>
                         <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
                     </tr>
                 </tbody>
@@ -118,3 +123,62 @@
                     </tr>
                 </tbody>
             </table>
+            <br> </br>
+
+            <div>
+                <h3> Experiment II: Text-to-Speech Model(Tacotron2 Model + WaveNet Vocoder)</h3>
+                <table class="table table-bordered">
+                    <!--<h3 class="lead"> English Speech</h3>-->
+                    <thead>
+                        <!--<tr class="text-center">
+                            <td>Ground-truth</td><td>Tacotron2(Open Source Version)</td><td>Tacotron2 (impletemented by myself)</td>
+                        </tr><-->
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5"><p>1: Printing, in the only sense with which we are at present concerned, differs from most if not from all the arts and crafts represented in the Exhibition.</p></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td><audio controls=""><source src="samples/GroundTruth/LJ001-0001.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/Tacotron2_tf/speech-syn_t-00001.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/IAF_Student/ljspeech-syn_student-00001.wav" type="audio/wav"></audio></td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="5"><p>2: Especially as no more time is occupied, or cost incurred, in casting, setting, or printing beautiful letters.</p></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td><audio controls=""><source src="samples/GroundTruth/LJ001-0012.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/Tacotron2_tf/speech-syn_t-00002.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="5"><p>3: A very few years saw the birth of Roman character not only in Italy, but in Germany and France.</p></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td><audio controls=""><source src="samples/GroundTruth/LJ001-0030.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/Tacotron2_tf/speech-syn_t-00003.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="5"><p>4: From twenty-one by eighteen feet to fifteen feet square, which were furnished with bedsteads and bedding.</p></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td><audio controls=""><source src="samples/GroundTruth/LJ002-0077.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/Gaussian/Tacotron2_tf/speech-syn_t-00004.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="5"><p>5: She has subsequently admitted the existence of the conversation and offered an explanation for her denial.</p></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td><audio controls=""><source src="samples/GroundTruth/LJ037-0072.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/Gaussian/Tacotron2_tf/speech-syn_t-00005.wav" type="audio/wav"></audio></td>
+                            <td><audio controls=""><source src="samples/demo.wav" type="audio/wav"></audio></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br> </br>
