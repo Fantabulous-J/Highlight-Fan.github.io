@@ -1,0 +1,21 @@
+f = open("result.html", "w")
+files = open("C:\\Users\\Moonlight_Blade\\PycharmProjects\\study_practice\\Tacotron2\\text_lists.txt")
+texts = files.readlines()
+for idx in range(5):
+    line = texts[idx]
+    mel_path = "C:\\Users\\Moonlight_Blade\\PycharmProjects\\study_practice\\Tacotron2\\samples\\mel_sample_{}.png".format(idx)
+    alignment_path = "C:\\Users\\Moonlight_Blade\\PycharmProjects\\study_practice\\Tacotron2\\samples\\alignment_sample_{}.png".format(idx)
+    audio_path = "C:\\Users\\Moonlight_Blade\\PycharmProjects\\study_practice\\Tacotron2\\audio\\{}".format("demo.wav")
+    f.write("""<div style="width: 600; margin: 0 auto; margin-top: 100">\n""")
+    f.write("\t<img src={}>\n".format(mel_path))
+    f.write("</div>\n")
+    f.write("""<div style="width: 600; margin: 0 auto">\n""")
+    f.write("\t<img src={}>\n".format(alignment_path))
+    f.write("</div>\n")
+    f.write("""<div style="width: 600; margin: 0 auto">\n""")
+    f.write("\t<p>{}. {}</p>\n".format(idx+1, line.strip()))
+    f.write(
+        """\t<audio controls="controls" >\n\t\t<source src="{}" autoplay/>Your browser does not support the audio element.\n\t</audio>\n""".format(audio_path)
+    )
+    f.write("</div>\n")
+    f.write("<b/><b/>\n")
